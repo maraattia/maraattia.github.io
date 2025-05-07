@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mara Attia | Exoplanet Science</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #5e35b1;
+            --primary-light: #7c4dff;
+            --primary-dark: #4527a0;
+            --secondary-color: #b39ddb;
+            --text-color: #333;
+            --light-text: #666;
+            --background: #f5f5f5;
+            --card-bg: #fff;
+            --navbar-height: 60px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Cormorant Garamond', serif;
+            line-height: 1.7;
+            color: var(--text-color);
+            background-color: var(--background);
+            position: relative;
+            font-size: 18px;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('images/background.jpg');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.08;
+            z-index: -1;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            color: var(--primary-dark);
+            letter-spacing: 0.02em;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: var(--navbar-height);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            font-family: 'Playfair Display', serif;
+            color: white;
+            text-decoration: none;
+            letter-spacing: 0.04em;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 1.5rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .nav-links a:hover {
+            color: var(--secondary-color);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        main {
+            margin-top: calc(var(--navbar-height) + 2rem);
+            margin-bottom: 4rem;
+        }
+
+        section {
+            margin-bottom: 4rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            border-bottom: 3px solid var(--primary-light);
+            padding-bottom: 0.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: var(--primary-color);
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        p {
+            margin-bottom: 1.2rem;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 3rem 0;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+        }
+
+        .hero-text {
+            flex: 1;
+            padding: 0 3rem 0 3rem;
+        }
+
+        .hero-img-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-img {
+            max-height: 500px;
+            max-width: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .jade-logo {
+            max-width: 200px;
+            margin-bottom: 1rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1.2rem;
+            margin-top: 1.5rem;
+        }
+
+        .social-links a {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            transition: color 0.3s, transform 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .social-links a:hover {
+            color: var(--primary-light);
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-top: 3px solid var(--primary-color);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .research-areas {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .research-card {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-top: 3px solid var(--primary-color);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .research-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(to right, var(--primary-color), var(--primary-light));
+            transition: height 0.3s;
+        }
+
+        .research-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .research-card:hover::before {
+            height: 6px;
+        }
+
+        .research-card h3 {
+            margin-top: 0;
+        }
+
+        .research-card p {
+            flex-grow: 1;
+        }
+
+        .publication-list {
+            list-style: none;
+        }
+
+        .publication-item {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .publication-item:last-child {
+            border-bottom: none;
+        }
+
+        .publication-title {
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .publication-authors {
+            font-style: italic;
+            margin-bottom: 0.5rem;
+        }
+
+        .publication-journal {
+            color: var(--light-text);
+        }
+
+        .teaching-list, .supervision-list {
+            list-style: none;
+            margin-top: 1rem;
+        }
+
+        .teaching-item, .supervision-item {
+            margin-bottom: 1.5rem;
+            padding-left: 1rem;
+            border-left: 3px solid var(--secondary-color);
+        }
+
+        .teaching-date, .supervision-date {
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .jade-section {
+            background-color: rgba(94, 53, 177, 0.05);
+            padding: 2rem;
+            border-radius: 8px;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+            border: 1px solid rgba(94, 53, 177, 0.2);
+            position: relative;
+        }
+
+        .jade-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .jade-github {
+            display: inline-flex;
+            align-items: center;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            margin-top: 1.5rem;
+            transition: background-color 0.3s, transform 0.3s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .jade-github i {
+            margin-right: 0.5rem;
+        }
+
+        .jade-github:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .contact-item i {
+            color: var(--primary-color);
+            font-size: 1.2rem;
+        }
+
+        footer {
+            background-color: var(--primary-dark);
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer-credits {
+            font-size: 0.85rem;
+            margin-top: 1rem;
+            opacity: 0.8;
+        }
+
+        .scroll-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: var(--primary-color);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            opacity: 0;
+            transition: opacity 0.3s, background-color 0.3s;
+            z-index: 100;
+        }
+
+        .scroll-to-top.visible {
+            opacity: 1;
+        }
+
+        .scroll-to-top:hover {
+            background-color: var(--primary-light);
+        }
+
+        /* Responsive styles */
+        @media (max-width: 992px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-text {
+                padding-right: 0;
+                padding-bottom: 2rem;
+            }
+
+            .social-links {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .nav-links {
+                position: absolute;
+                top: var(--navbar-height);
+                left: 0;
+                right: 0;
+                background-color: var(--primary-color);
+                flex-direction: column;
+                align-items: center;
+                padding: 1rem 0;
+                display: none;
+                z-index: 1000;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links li {
+                margin: 0.5rem 0;
+            }
+
+            .research-areas {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">Mara Attia</a>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#jade">JADE</a></li>
+                    <li><a href="#research">Research</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#cv">CV</a></li>
+                    <li><a href="#teaching">Teaching</a></li>
+                    <li><a href="#outreach">Outreach</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="about" class="hero">
+            <div class="hero-text">
+                <h1>Mara Attia</h1>
+                <p>Postdoctoral Researcher in Exoplanet Science</p>
+                <p>Kapteyn Astronomical Institute, University of Groningen</p>
+                <p>My research focuses on studying the interplay between dynamical and atmospheric phenomena in the long-term evolution of exoplanets close to their stars.</p>
+                <div class="social-links">
+                    <a href="mailto:maraaattia@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://orcid.org/0000-0002-7971-7439" target="_blank" title="ORCID"><i class="fab fa-orcid"></i></a>
+                    <a href="https://github.com/maraattia" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://ui.adsabs.harvard.edu/search/fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq_database=database%3Aastronomy&q=%20author%3A%22attia%2C%20mara%22&sort=date%20desc%2C%20bibcode%20desc&p_=0" target="_blank" title="NASA ADS"><i class="fas fa-book"></i></a>
+                    <a href="https://bsky.app/profile/marattia.bsky.social" target="_blank" title="Bluesky"><i class="fas fa-cloud"></i></a>
+                </div>
+            </div>
+            <div class="hero-img-container">
+                <img src="assets/mara_attia.jpg" alt="Mara Attia" class="hero-img">
+            </div>
+        </section>
+
+        <section id="jade" class="jade-section">
+            <div class="jade-content">
+                <img src="assets/jade_logo.png" alt="JADE Code Logo" class="jade-logo">
+                <h2>The JADE Code</h2>
+                <p>The JADE (Joining Atmosphere and Dynamics for Exoplanets) code is a sophisticated Python framework for simulating the coupled evolution of exoplanetary atmospheres and orbital dynamics in hierarchical three-body systems.</p>
+                <p>Designed to study the interplay between photo-evaporation and high-eccentricity migration, JADE has been instrumental in understanding the formation of the Hot Neptune desert and the peculiar orbital architecture of exoplanets like GJ436b.</p>
+                <a href="https://github.com/JADE-Exoplanets/JADE" class="jade-github" target="_blank">
+                    <i class="fab fa-github"></i> View on GitHub
+                </a>
+            </div>
+        </section>
+
+        <section id="research">
+            <h2>Research</h2>
+            <p>My research focuses on studying the interplay between dynamical and atmospheric phenomena in the long-term evolution of exoplanets close to their stars. I'm currently transitioning toward studying terrestrial planets and interior melting processes, aligning my research closer with ambitious exoplanet missions planned for the coming years.</p>
+            
+            <div class="research-areas">
+                <div class="research-card">
+                    <h3>Orbital Dynamics</h3>
+                    <p>Studying secular dynamical evolution and orbital migration pathways of exoplanets, with a focus on how these processes affect their long-term evolution.</p>
+                </div>
+                <div class="research-card">
+                    <h3>Atmospheric Characterization</h3>
+                    <p>Investigating atmospheric evaporation processes and characterizing exoplanetary atmospheres through transit spectroscopy and other observational techniques.</p>
+                </div>
+                <div class="research-card">
+                    <h3>Interior Mechanisms</h3>
+                    <p>Exploring interior melting processes and their impact on the climate evolution of terrestrial exoplanets, particularly in relation to their habitability.</p>
+                </div>
+                <div class="research-card">
+                    <h3>Hot Neptune Desert</h3>
+                    <p>Investigating the population and characteristics of exoplanets in the Hot Neptune Desert, a region in the mass-period diagram where few Neptune-sized planets are found.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="publications">
+            <h2>Selected Publications</h2>
+            <ul class="publication-list">
+                <li class="publication-item">
+                    <div class="publication-title">TOI-512: Super-Earth transiting a K-type star discovered by TESS and ESPRESSO</div>
+                    <div class="publication-authors">Rodrigues et al., <strong>2025</strong></div>
+                    <div class="publication-journal">A&A, 695, 237</div>
+                </li>
+                <li class="publication-item">
+                    <div class="publication-title">The ANTARESS workflow I. Optimal extraction of spatially resolved stellar spectra with high-resolution transit spectroscopy</div>
+                    <div class="publication-authors">Bourrier et al., <strong>2024</strong></div>
+                    <div class="publication-journal">A&A, 691, 113</div>
+                </li>
+                <li class="publication-item">
+                    <div class="publication-title">DREAM. II. The spin-orbit angle distribution of close-in exoplanets under the lens of tides</div>
+                    <div class="publication-authors">Attia et al., <strong>2023</strong></div>
+                    <div class="publication-journal">A&A 674, 120</div>
+                </li>
+                <li class="publication-item">
+                    <div class="publication-title">DREAM. I. Orbital architecture orrery</div>
+                    <div class="publication-authors">Bourrier, Attia et al., <strong>2023</strong></div>
+                    <div class="publication-journal">A&A 669, 63</div>
+                </li>
+                <li class="publication-item">
+                    <div class="publication-title">The JADE code: Coupling secular exoplanetary dynamics and photo-evaporation</div>
+                    <div class="publication-authors">Attia et al., <strong>2021</strong></div>
+                    <div class="publication-journal">A&A 647, 40</div>
+                </li>
+            </ul>
+            <p><a href="https://ui.adsabs.harvard.edu/" target="_blank">See full publication list on ADS</a></p>
+        </section>
+
+        <section id="cv">
+            <h2>Curriculum Vitae</h2>
+            
+            <h3>Education</h3>
+            <div class="card">
+                <p><strong>PhD in Astronomy and Astrophysics</strong>, 2021-2024<br>
+                Geneva Observatory, Switzerland<br>
+                <em>Thesis: Interplay between dynamical and atmospheric phenomena in exoplanet evolution</em><br>
+                Supervisors: Profs. Vincent Bourrier and Emeline Bolmont</p>
+                
+                <p><strong>MSc in Physics (Astrophysics)</strong>, 2019-2021<br>
+                ETH Zurich, Switzerland<br>
+                <em>Master Thesis: Primordial magnetic fields during the Epoch of Reionization</em><br>
+                Supervisor: Prof. Romain Teyssier</p>
+                
+                <p><strong>MSc in Science and Engineering</strong>, 2016-2019<br>
+                École Polytechnique, Paris, France<br>
+                <em>Research Internship: Exoplanetary atmospheres and orbital architectures</em><br>
+                Supervisors: Profs. Vincent Bourrier and David Ehrenreich</p>
+            </div>
+            
+            <h3>Professional Experience</h3>
+            <div class="card">
+                <p><strong>Postdoctoral Researcher</strong>, May 2025-Present<br>
+                Kapteyn Astronomical Institute, University of Groningen, Netherlands<br>
+                <em>Project: Exoplanet climate evolution and interior melting processes</em><br>
+                Collaboration with Prof. Tim Lichtenberg</p>
+                
+                <p><strong>Postdoctoral Researcher</strong>, 2024-2025<br>
+                Geneva Observatory, Switzerland<br>
+                <em>Continuation of PhD research</em></p>
+            </div>
+            
+            <h3>Grants and Awards</h3>
+            <div class="card">
+                <p><strong>SNF Postdoc.Mobility Fellowship</strong>, 2025</p>
+                <p><strong>SSAA Funding Award</strong>, 2022</p>
+                <p><strong>Virtual Outstanding Presentation Contest Award</strong>, Europlanet Science Congress, 2021</p>
+                <p><strong>Research Internship Award in Astrophysics and Cosmology</strong>, École Polytechnique, 2019</p>
+            </div>
+            
+            <p><a href="assets/CV_Mara_Attia.pdf" target="_blank">Download Full CV</a></p>
+        </section>
+
+        <section id="teaching">
+            <h2>Teaching & Supervision</h2>
+            
+            <h3>Teaching</h3>
+            <ul class="teaching-list">
+                <li class="teaching-item">
+                    <div class="teaching-date">Spring 2023</div>
+                    <div>Teaching Assistant for "Planetary Atmospheres" and "Planetary Formation and Evolution" courses, University of Geneva</div>
+                </li>
+                <li class="teaching-item">
+                    <div class="teaching-date">Spring 2022</div>
+                    <div>Teaching Assistant for "Planetary Atmospheres" course, University of Geneva</div>
+                </li>
+            </ul>
+            
+            <h3>Supervision</h3>
+            <ul class="supervision-list">
+                <li class="supervision-item">
+                    <div class="supervision-date">May 2023 - June 2023</div>
+                    <div>Co-supervised Léonie Hoerner (Université de Lorraine) for a Master internship on modeling exoplanetary water atmospheres</div>
+                </li>
+                <li class="supervision-item">
+                    <div class="supervision-date">April 2022 - August 2022</div>
+                    <div>Co-supervised Théo Vrignaud (École polytechnique, Paris) for a Master thesis on the analysis of the Rossiter—McLaughlin effect of ultra-short-period rocky exoplanets</div>
+                </li>
+                <li class="supervision-item">
+                    <div class="supervision-date">February 2022 - June 2022</div>
+                    <div>Supervised Leon Kawang Kwok (University of Geneva) for a Master project on exoplanetary dynamical tides</div>
+                </li>
+                <li class="supervision-item">
+                    <div class="supervision-date">November 2021 - March 2022</div>
+                    <div>Supervised Aymeric Carchereux (University of Geneva) for a Bachelor project on exoplanetary radius pulsations induced by the Kozai—Lidov mechanism</div>
+                </li>
+            </ul>
+        </section>
+
+        <section id="outreach">
+            <h2>Outreach & Public Engagement</h2>
+            <div class="card">
+                <p>I participate in various outreach activities to share my passion for astronomy and exoplanet science with the general public:</p>
+                <ul>
+                    <li>Participated in the "Exoplanètes : Art, Science & Fiction" outreach project, collaborating with students from the École supérieure de bande dessinée et d'illustration de Genève to create illustrated posters about exoplanet research</li>
+                    <li>Participated in "Astro-coffees" outreach events, organized by the Geneva Observatory and the Geneva Museum of Sciences, meeting with the general public to answer questions about astrophysics</li>
+                    <li>Co-author of press releases about exoplanet discoveries, issued by the University of Geneva and ESO</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="card">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>maraaattia@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Kapteyn Astronomical Institute, University of Groningen, Netherlands</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <a href="https://github.com/maraattia" target="_blank">GitHub Profile</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-orcid"></i>
+                        <a href="https://orcid.org/0000-0002-7971-7439" target="_blank">ORCID Profile</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-book"></i>
+                        <a href="https://ui.adsabs.harvard.edu/search/fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq_database=database%3Aastronomy&q=%20author%3A%22attia%2C%20mara%22&sort=date%20desc%2C%20bibcode%20desc&p_=0" target="_blank">ADS Publications</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-cloud"></i>
+                        <a href="https://bsky.app/profile/marattia.bsky.social" target="_blank">Bluesky Profile</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Mara Attia | Last updated: May 2025</p>
+                <div class="footer-credits">
+                    <p>Background image and JADE logo credit: Elsa Bersier, ESBDI</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                navLinks.classList.remove('active');
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 70,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Scroll to top button
+        const scrollToTopBtn = document.querySelector('.scroll-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollToTopBtn.classList.add('visible');
+            } else {
+                scrollToTopBtn.classList.remove('visible');
+            }
+        });
+
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
