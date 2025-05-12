@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mara Attia | Exoplanet Scientist</title>
     <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
@@ -357,7 +357,14 @@
             text-align: center;
         }
 
-        .jade-github {
+        .jade-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .jade-button {
             display: inline-flex;
             align-items: center;
             background-color: var(--primary-color);
@@ -366,16 +373,16 @@
             padding: 0.75rem 1.5rem;
             border-radius: 50px;
             font-weight: 600;
-            margin-top: 1.5rem;
+            margin-top: 0;
             transition: background-color 0.3s, transform 0.3s;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
-        .jade-github i {
+        .jade-button i {
             margin-right: 0.5rem;
         }
 
-        .jade-github:hover {
+        .jade-button:hover {
             background-color: var(--primary-dark);
             transform: translateY(-2px);
             box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
@@ -547,12 +554,14 @@
                 <h2>The JADE Code</h2>
                 <p>The JADE (Joining Atmosphere and Dynamics for Exoplanets) code is a sophisticated Python framework for simulating the coupled evolution of exoplanetary atmospheres and orbital dynamics in hierarchical three-body systems.</p>
                 <p>Designed to study the interplay between photo-evaporation and high-eccentricity migration, JADE has been instrumental in understanding the formation of the Hot Neptune desert and the peculiar orbital architecture of exoplanets like GJ 436 b.</p>
-                <a href="https://ui.adsabs.harvard.edu/abs/2021A%26A...647A..40A/abstract" class="jade-github" target="_blank">
-                    <i class="fa-solid fa-newspaper"></i> View on ADS
-                </a>
-                <a href="https://github.com/JADE-Exoplanets/JADE" class="jade-github" target="_blank">
-                    <i class="fab fa-github"></i> View on GitHub
-                </a>
+                <div class="jade-buttons">
+                    <a href="https://ui.adsabs.harvard.edu/abs/2021A%26A...647A..40A/abstract" class="jade-button" target="_blank">
+                        <i class="fa-solid fa-newspaper"></i> View on ADS
+                    </a>
+                    <a href="https://github.com/JADE-Exoplanets/JADE" class="jade-button" target="_blank">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
             </div>
         </section>
 
@@ -714,7 +723,9 @@
                         <i class="fas fa-map-marker-alt"></i>
                         <span>Kapteyn Astronomical Institute, University of Groningen, Netherlands</span>
                     </div>
-                    <br>
+                    
+                    <hr style="width: 100%; margin: 1.5rem 0; border: 0; border-top: 1px solid rgba(94, 53, 177, 0.2);">
+                    
                     <div class="contact-item">
                         <i class="fab fa-github"></i>
                         <a href="https://github.com/maraattia" target="_blank">GitHub Profile</a>
