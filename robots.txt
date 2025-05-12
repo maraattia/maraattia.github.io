@@ -1,0 +1,22 @@
+# robots.txt file for academic personal website
+
+# Allow all robots complete access
+User-agent: *
+Allow: /
+
+# Specify sitemap location
+Sitemap: https://maraattia.github.io/sitemap.xml
+
+# Optional: Disallow access to any private or development areas
+# Uncomment the lines below if needed
+# Disallow: /private/
+# Disallow: /dev/
+# Disallow: /drafts/
+# Disallow: /assets/raw/
+
+# Prevent specific bots from overloading your site
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
