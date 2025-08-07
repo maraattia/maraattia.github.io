@@ -206,6 +206,60 @@
             margin-bottom: 1rem;
         }
 
+        .latest-news {
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 2rem 3rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .latest-news p {
+            font-weight: 600;
+            color: var(--primary-dark);
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .news-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .news-list li {
+            margin-bottom: 1.2rem;
+            padding-left: 1.5rem;
+            position: relative;
+            line-height: 1.8;
+        }
+
+        .news-list li::before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        .news-list li em {
+            color: var(--primary-color);
+            font-weight: 600;
+            font-style: normal;
+            margin-right: 0.5rem;
+        }
+
+        .news-list li a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .news-list li a:hover {
+            color: var(--primary-light);
+            text-decoration: underline;
+        }
+
         .social-links {
             display: flex;
             gap: 1.2rem;
@@ -636,17 +690,19 @@
                     <a href="https://ui.adsabs.harvard.edu/public-libraries/UcMvHT4nRrywK0RnkSehYQ" target="_blank" title="NASA ADS"><i class="fas fa-book"></i></a>
                     <a href="https://bsky.app/profile/marattia.bsky.social" target="_blank" title="Bluesky"><i class="fa-brands fa-bluesky"></i></a>
                 </div>
-                <p><u>Latest news:</u>
-                    <ul>
-                        <li><em>2025, August.</em> New published paper: <a href="https://ui.adsabs.harvard.edu/abs/2025A%26A...700A..35A/abstract" target="_blank">Exploring the parameter space of hierarchical triple black hole systems</a>, Attia & Sibony (2025), A&A 700 A35. Application of the JADE code to black hole triples and assessment of the Kozai–Lidov mechanism as a viable channel for mergers and gravitational wave progenitors. Very fun (and challenging) side project, completely out of the scope of my usual expertise, but showcases the versatility of JADE.</li>
-                        <li><em>2025, July.</em> It is a great honor to receive the <a href="https://ssaa.ch/fr/edith_a_m_ller_award/uuid/i/5225f70c-a2cd-5af2-acfc-ea6b32e401d5-Edith_Alice_M%C3%BCller_Award_2025" target="_blank">Edith Alice Müller Award 2025</a> delivered by the Swiss Society for Astronomy and Astrophysics for an "outstanding PhD thesis in the fields of Astronomy and Astrophysics."</li>
-                    </ul>
-                </p>
             </div>
             <div class="hero-img-container">
                 <img src="images/mara_attia.jpg" alt="Mara Attia" class="hero-img">
             </div>
         </section>
+
+        <div class="latest-news">
+            <p><u>Latest news:</u></p>
+            <ul class="news-list">
+                <li><em>2025, August.</em> New published paper: <a href="https://ui.adsabs.harvard.edu/abs/2025A%26A...700A..35A/abstract" target="_blank">Exploring the parameter space of hierarchical triple black hole systems</a>, Attia & Sibony (2025), A&A, 700, A35. Application of the JADE code to black hole triples and assessment of the Kozai–Lidov mechanism as a viable channel for mergers and gravitational wave progenitors. Very fun (and challenging) side project, completely out of the scope of my usual expertise, but showcases the versatility of JADE.</li>
+                <li><em>2025, July.</em> It is a great honor to receive the <a href="https://ssaa.ch/fr/edith_a_m_ller_award/uuid/i/5225f70c-a2cd-5af2-acfc-ea6b32e401d5-Edith_Alice_M%C3%BCller_Award_2025" target="_blank">Edith Alice Müller Award 2025</a> delivered by the Swiss Society for Astronomy and Astrophysics for an "outstanding PhD thesis in the fields of Astronomy and Astrophysics."</li>
+            </ul>
+        </div>
 
         <section id="jade" class="jade-section">
             <div class="jade-content">
@@ -754,13 +810,13 @@
                 
                 <p><strong>MSc in Physics (Astrophysics)</strong>, 2019 – 2021<br>
                 ETH Zurich, Switzerland<br>
-                <em>Master Thesis: Primordial magnetic fields during the Epoch of Reionization</em><br>
+                <em>Master Thesis: Primordial magnetic fields during the Epoch of Reionization.</em><br>
                 <u>Supervisor:</u> Prof. Romain Teyssier.<br>
                 Final MSc average grade: 5.8/6 (high honors).</p>
                 
                 <p><strong>MSc in Science and Engineering</strong>, 2016 – 2019<br>
                 École Polytechnique (Paris), France<br>
-                <em>Research Internship: Exoplanetary atmospheres and orbital architectures</em><br>
+                <em>Research Internship: Exoplanetary atmospheres and orbital architectures.</em><br>
                 <u>Supervisors:</u> Profs. Vincent Bourrier and David Ehrenreich.<br>
                 Rewarded by the Research Internship Award in Astrophysics and Cosmology delivered by École Polytechnique.</p>
             </div>
