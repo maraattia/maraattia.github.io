@@ -35,6 +35,7 @@ img { max-width: 100%; }
 a { color: var(--accent-2); text-decoration: none; transition: color 0.2s, background-size 0.3s, box-shadow 0.2s; }
 a:hover { color: var(--accent); }
 cite { font-style: italic; }
+strong { font-weight: 900; }
 
 h1, h2, h3 { font-family: var(--font-head); color: var(--accent); line-height: 1.2; font-weight: 600; }
 h1 { font-size: 2.4rem; margin: 0 0 0.4rem; }

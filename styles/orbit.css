@@ -97,6 +97,9 @@ main { padding-top: 0; }
     box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.22), 0 18px 50px rgba(0, 0, 0, 0.45), 0 0 60px rgba(166, 28, 65, 0.5);
 }
 .hero .pitch, .hero p { color: #fff; }
+.hero strong { color: #f6e6ec; }
+.theme strong { color: var(--text); }
+.page-head .page-intro strong { color: #f6e6ec; }
 /* Name in the light pink, subtitle and role in a deeper pink, for a layered look
    against the white body text */
 .hero h1 { color: #f6e6ec; text-shadow: 0 3px 0 rgba(166, 28, 65, 0.45), 0 0 34px rgba(246, 230, 236, 0.22); }
