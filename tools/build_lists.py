@@ -375,7 +375,7 @@ def footer_html(today):
         '<footer class="site-footer">\n'
         '  <div class="wrap">\n'
         f'    <p>&copy; {today.year} Mara Attia. Last updated {MONTHS[today.month - 1]} {today.year}.</p>\n'
-        '    <p class="credits">JADE logo by Elsa Bersier (ESBDI). ZEPHYRUS logo from the <a href="https://github.com/FormingWorlds/ZEPHYRUS" target="_blank" rel="noopener">ZEPHYRUS repository</a>. '
+        '    <p class="credits">JADE logo by Elsa Bersier (ESBDI). ZEPHYRUS logo by Emma Postolec (University of Groningen). '
         'Background art, cropped and dimmed, under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>: '
         'TRAPPIST-1, <a href="https://www.eso.org/public/images/eso1805a/" target="_blank" rel="noopener">ESO/M. Kornmesser</a>. '
         'CoRoT-7 b, <a href="https://www.eso.org/public/images/eso0933a/" target="_blank" rel="noopener">ESO/L. Calçada</a>. '
