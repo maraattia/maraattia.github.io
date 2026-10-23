@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Open-source codes by Dr. Mara Attia: PALEOS (planetary equations of state), JADE (coupled orbital and atmospheric evolution), and ZEPHYRUS (atmospheric escape).">
+    <title>Codes | Mara Attia</title>
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/orbit.css">
+</head>
+<body>
+<!-- BEGIN site-header -->
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="index.html">Mara Attia</a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="site-nav" aria-label="Menu"><i class="fas fa-bars" aria-hidden="true"></i></button>
+    <nav id="site-nav"><ul>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="codes.html" aria-current="page">Codes</a></li>
+      <li><a href="papers.html">Papers</a></li>
+      <li><a href="talks.html">Talks</a></li>
+      <li><a href="teaching.html">Teaching</a></li>
+      <li><a href="assets/CV_Mara_Attia.pdf" target="_blank" rel="noopener">CV</a></li>
+    </ul></nav>
+  </div>
+</header>
+<!-- END site-header -->
+
+<main class="wrap">
+    <div class="page-head" style="--img: url(/images/bg/banner.jpg)">
+        <h1>Open-source codes</h1>
+        <p class="page-intro">Most of my results come from codes I wrote and released openly, with documentation and archived versions so that others can reuse them. The first three below are codes I lead, and the others are listed at the end.</p>
+    </div>
+
+    <article class="code" id="paleos">
+        <figure class="visual">
+            <img src="images/paleos_logo.png" alt="PALEOS logo" width="400" height="462">
+        </figure>
+        <div>
+            <h3>PALEOS</h3>
+            <p class="status">Lead developer · Python · 2026</p>
+            <p>PALEOS (Planetary Assemblage Layers: Equations Of State) computes the thermodynamic properties of iron, MgSiO₃, and water at the pressures and temperatures of planetary interiors. It covers five phases of iron, six of MgSiO₃, and the ice, liquid, vapor, and supercritical phases of water, selects the stable phase automatically, and returns the same seven quantities, from density to the adiabatic gradient, through one interface for every material.</p>
+            <p>Precomputed lookup tables, and mass–radius relations for rocky and water-rich planets, are archived on Zenodo and can be used without installing anything. PALEOS is the interior back-end of the PROTEUS framework.</p>
+            <ul class="buttons">
+                <li><a href="https://github.com/maraattia/PALEOS" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i>GitHub</a></li>
+                <li><a href="https://doi.org/10.5281/zenodo.19000315" target="_blank" rel="noopener"><i class="fas fa-table" aria-hidden="true"></i>EoS tables</a></li>
+                <li><a href="https://doi.org/10.5281/zenodo.19221214" target="_blank" rel="noopener"><i class="fas fa-table" aria-hidden="true"></i>Mass–radius tables</a></li>
+                <li><a href="https://ui.adsabs.harvard.edu/abs/2026A%26A...713A.225A/abstract" target="_blank" rel="noopener"><i class="fas fa-newspaper" aria-hidden="true"></i>Paper</a></li>
+            </ul>
+        </div>
+    </article>
+
+    <article class="code" id="jade">
+        <figure class="visual">
+            <img src="images/jade_logo.png" alt="JADE logo: a star and an orbiting planet with an evaporating atmosphere" width="361" height="400">
+        </figure>
+        <div>
+            <h3>JADE</h3>
+            <p class="status">Lead developer · Python · 2021</p>
+            <p>JADE (Joining Atmosphere and Dynamics for Exoplanets) follows a planet in a hierarchical three-body system, its star plus a distant companion, over billions of years. It integrates the secular dynamics to hexadecapolar order, including von Zeipel–Lidov–Kozai cycles, tides, the planet's rotation, and general-relativistic precession, together with the planet's layered structure and the photo-evaporation of its atmosphere.</p>
+            <p>I wrote it during my PhD in Geneva. It has been used in <a href="https://scixplorer.org/public-libraries/2XQbLh1zRQupC1yFGo98rw" target="_blank" rel="noopener">11 studies</a> to date.</p>
+            <ul class="buttons">
+                <li><a href="https://github.com/JADE-Exoplanets/JADE" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i>GitHub</a></li>
+                <li><a href="https://doi.org/10.5281/zenodo.15167399" target="_blank" rel="noopener"><i class="fas fa-box-archive" aria-hidden="true"></i>Zenodo</a></li>
+                <li><a href="https://ui.adsabs.harvard.edu/abs/2021A%26A...647A..40A/abstract" target="_blank" rel="noopener"><i class="fas fa-newspaper" aria-hidden="true"></i>Paper I</a></li>
+                <li><a href="https://ui.adsabs.harvard.edu/abs/2025A%26A...702A.132A/abstract" target="_blank" rel="noopener"><i class="fas fa-newspaper" aria-hidden="true"></i>Paper II</a></li>
+            </ul>
+        </div>
+    </article>
+
+    <article class="code" id="zephyrus">
+        <figure class="visual">
+            <img class="logo-on-light" src="images/zephyrus_logo_light.png" alt="ZEPHYRUS logo" width="520" height="151">
+            <img class="logo-on-dark" src="images/zephyrus_logo_dark.png" alt="ZEPHYRUS logo" width="520" height="156">
+        </figure>
+        <div>
+            <h3>ZEPHYRUS</h3>
+            <p class="status">Lead developer since 2026 · Python · Forming Worlds Lab</p>
+            <p>ZEPHYRUS is the atmospheric escape module of the PROTEUS framework, started in the Forming Worlds Lab. Its released version computes energy-limited escape driven by stellar X-ray and ultraviolet light, with a tidal correction, and the fraction of an atmosphere lost in a giant impact.</p>
+            <p>I now lead its development and am rebuilding it around a regime dispatcher. Given the state of a planet, the dispatcher decides which of six escape regimes applies, from the boil-off of a young envelope through hydrodynamic and hydrostatic escape to Roche-lobe overflow, and splits the outflow over chemical species with a multi-species fractionation model. The first part of the rebuild is in review.</p>
+            <ul class="buttons">
+                <li><a href="https://github.com/FormingWorlds/ZEPHYRUS" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i>GitHub</a></li>
+                <li><a href="https://proteus-framework.org/ZEPHYRUS/" target="_blank" rel="noopener"><i class="fas fa-book-open" aria-hidden="true"></i>Documentation</a></li>
+                <li><a href="https://github.com/FormingWorlds/ZEPHYRUS/pull/34" target="_blank" rel="noopener"><i class="fas fa-code-pull-request" aria-hidden="true"></i>Pull request #34</a></li>
+            </ul>
+        </div>
+    </article>
+
+    <h2>Other codes</h2>
+<!-- BEGIN codes-other -->
+<ul class="plain">
+<li><a href="https://github.com/FormingWorlds/PROTEUS" target="_blank" rel="noopener">PROTEUS</a>: a modular Python framework for the coupled interior–atmosphere–orbit evolution of rocky and sub-Neptune planets, developed as a team effort by the whole Forming Worlds Lab and its collaborators, with me as a maintainer and major contributor.</li>
+<li><a href="https://github.com/maraattia/TripleBHMergerPredictor" target="_blank" rel="noopener">TripleBHMergerPredictor</a>: a Python-based neural network for predicting mergers in hierarchical triple black hole systems trained on ~ 15M secular simulations.</li>
+</ul>
+<!-- END codes-other -->
+</main>
+
+<!-- BEGIN site-footer -->
+<footer class="site-footer">
+  <div class="wrap">
+    <p>&copy; 2026 Mara Attia. Last updated October 2026.</p>
+    <p class="credits">JADE logo by Elsa Bersier (ESBDI). ZEPHYRUS logo from the <a href="https://github.com/FormingWorlds/ZEPHYRUS" target="_blank" rel="noopener">ZEPHYRUS repository</a>. Background art, cropped and dimmed, under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>: TRAPPIST-1, <a href="https://www.eso.org/public/images/eso1805a/" target="_blank" rel="noopener">ESO/M. Kornmesser</a>. CoRoT-7 b, <a href="https://www.eso.org/public/images/eso0933a/" target="_blank" rel="noopener">ESO/L. Calçada</a>. GJ 436 b, <a href="https://esahubble.org/images/heic1515a/" target="_blank" rel="noopener">NASA, ESA, STScI, and G. Bacon</a>. 2M1510 (AB) b, <a href="https://www.eso.org/public/images/eso2508a/" target="_blank" rel="noopener">ESO/L. Calçada</a>. Milky Way, <a href="https://www.eso.org/public/images/eso0932a/" target="_blank" rel="noopener">ESO/S. Brunier</a>.</p>
+  </div>
+</footer>
+<!-- END site-footer -->
+<script src="site.js"></script>
+</body>
+</html>

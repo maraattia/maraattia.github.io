@@ -3,589 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Dr. Mara Attia is a Postdoctoral Researcher in Exoplanet Science at Kapteyn Astronomical Institute, specializing in orbital dynamics and atmospheric evolution.">
-    <title>Mara Attia | Exoplanet Scientist</title>
+    <meta name="description" content="Dr. Mara Attia (they/them) is an SNSF Postdoc.Mobility Fellow at the Kapteyn Astronomical Institute, University of Groningen, working on how the orbits, atmospheres, and interiors of small exoplanets evolve together.">
+    <title>Mara Attia | Exoplanet scientist</title>
+    <meta property="og:title" content="Dr. Mara Attia (they/them)">
+    <meta property="og:description" content="SNSF Postdoc.Mobility Fellow at the Kapteyn Astronomical Institute, University of Groningen. Orbits, atmospheres, and interiors of small exoplanets.">
+    <meta property="og:image" content="https://maraattia.github.io/images/mara_attia.jpg">
+    <meta property="og:url" content="https://maraattia.github.io/">
     <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --primary-color: #5e35b1;
-            --primary-light: #7c4dff;
-            --primary-dark: #4527a0;
-            --secondary-color: #b39ddb;
-            --text-color: #333;
-            --light-text: #666;
-            --background: #f5f5f5;
-            --card-bg: #fff;
-            --navbar-height: 60px;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: 'Space Grotesk', sans-serif;
-            line-height: 1.7;
-            color: var(--text-color);
-            background-color: var(--background);
-            position: relative;
-            font-size: 18px;
-        }
-
-        body::before {
-            content: "";
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-image: url('images/background.jpg');
-            background-size: cover;
-            background-position: center;
-            opacity: 0.08;
-            z-index: -1;
-        }
-
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'Raleway', sans-serif;
-            font-weight: 600;
-            color: var(--primary-dark);
-            letter-spacing: 0.02em;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        header {
-            background-color: var(--primary-color);
-            color: white;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: var(--navbar-height);
-        }
-
-        .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            font-family: 'Raleway', sans-serif;
-            color: white;
-            text-decoration: none;
-            letter-spacing: 0.04em;
-        }
-
-        .nav-links {
-            display: flex;
-            list-style: none;
-        }
-
-        .nav-links li {
-            margin-left: 1.5rem;
-        }
-
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s;
-            font-size: 0.95rem;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        .nav-links a:hover {
-            color: var(--secondary-color);
-        }
-
-        .mobile-menu-btn {
-            display: none;
-            background: none;
-            border: none;
-            color: white;
-            font-size: 1.5rem;
-            cursor: pointer;
-        }
-
-        main {
-            margin-top: calc(var(--navbar-height) + 2rem);
-            margin-bottom: 4rem;
-        }
-
-        section {
-            margin-bottom: 4rem;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-        }
-
-        h2 {
-            font-size: 2rem;
-            border-bottom: 3px solid var(--primary-light);
-            padding-bottom: 0.5rem;
-            margin-top: 2rem;
-            margin-bottom: 1.5rem;
-            position: relative;
-        }
-
-        h2::after {
-            content: '';
-            position: absolute;
-            bottom: -3px;
-            left: 0;
-            width: 60px;
-            height: 3px;
-            background-color: var(--primary-color);
-        }
-
-        h3 {
-            font-size: 1.5rem;
-            margin-top: 1.5rem;
-            margin-bottom: 1rem;
-            color: var(--primary-color);
-        }
-
-        p {
-            margin-bottom: 1.2rem;
-            line-height: 1.8;
-            font-size: 1.1rem;
-        }
-
-        .hero {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            padding: 3rem 0;
-            background-color: rgba(255, 255, 255, 0.9);
-            border-radius: 8px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-            overflow: hidden;
-        }
-
-        .hero-text {
-            flex: 1;
-            padding: 0 3rem 0 3rem;
-        }
-
-        .hero-img-container {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .hero-img {
-            max-height: 500px;
-            max-width: 100%;
-            object-fit: cover;
-            border-radius: 8px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-        }
-
-        .jade-logo {
-            max-width: 200px;
-            margin-bottom: 1rem;
-        }
-
-        .latest-news {
-            background-color: rgba(255, 255, 255, 0.95);
-            padding: 2rem 3rem;
-            border-radius: 8px;
-            margin: 2rem 0;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-            border-left: 4px solid var(--primary-color);
-        }
-
-        .latest-news p {
-            font-weight: 600;
-            color: var(--primary-dark);
-            margin-bottom: 1rem;
-            font-size: 1.2rem;
-        }
-
-        .news-list {
-            list-style: none;
-            padding: 0;
-        }
-
-        .news-list li {
-            margin-bottom: 1.2rem;
-            padding-left: 1.5rem;
-            position: relative;
-            line-height: 1.8;
-        }
-
-        .news-list li::before {
-            content: "▸";
-            position: absolute;
-            left: 0;
-            color: var(--primary-color);
-            font-weight: bold;
-        }
-
-        .news-list li em {
-            color: var(--primary-color);
-            font-weight: 600;
-            font-style: normal;
-            margin-right: 0.5rem;
-        }
-
-        .news-list li a {
-            color: var(--primary-color);
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        .news-list li a:hover {
-            color: var(--primary-light);
-            text-decoration: underline;
-        }
-
-        .social-links {
-            display: flex;
-            gap: 1.2rem;
-            margin-top: 1.5rem;
-        }
-
-        .social-links a {
-            color: var(--primary-color);
-            font-size: 1.8rem;
-            transition: color 0.3s, transform 0.3s;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background-color: rgba(255, 255, 255, 0.8);
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .social-links a:hover {
-            color: var(--primary-light);
-            transform: translateY(-3px);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-        }
-
-        .card {
-            background-color: var(--card-bg);
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-            transition: transform 0.3s, box-shadow 0.3s;
-            border-top: 3px solid var(--primary-color);
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-        }
-
-        .research-areas {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 1.5rem;
-            margin-top: 2rem;
-        }
-
-        .research-card {
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-            background-color: var(--card-bg);
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            padding: 1.5rem;
-            transition: transform 0.3s, box-shadow 0.3s;
-            border-top: 3px solid var(--primary-color);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .research-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 3px;
-            background: linear-gradient(to right, var(--primary-color), var(--primary-light));
-            transition: height 0.3s;
-        }
-
-        .research-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-        }
-
-        .research-card:hover::before {
-            height: 6px;
-        }
-
-        .research-card h3 {
-            margin-top: 0;
-        }
-
-        .research-card p {
-            flex-grow: 1;
-        }
-
-        .publication-list {
-            list-style: none;
-        }
-
-        .publication-item {
-            margin-bottom: 1.5rem;
-            padding-bottom: 1.5rem;
-            border-bottom: 1px solid #eee;
-        }
-
-        .publication-item:last-child {
-            border-bottom: none;
-        }
-
-        .publication-title {
-            font-weight: bold;
-            color: var(--primary-color);
-            margin-bottom: 0.5rem;
-        }
-
-        .publication-authors {
-            font-style: italic;
-            margin-bottom: 0.5rem;
-        }
-
-        .publication-journal {
-            color: var(--light-text);
-        }
-
-        .teaching-list, .supervision-list {
-            list-style: none;
-            margin-top: 1rem;
-        }
-
-        .teaching-item, .supervision-item {
-            margin-bottom: 1.5rem;
-            padding-left: 1rem;
-            border-left: 3px solid var(--secondary-color);
-        }
-
-        .teaching-date, .supervision-date {
-            font-weight: bold;
-            color: var(--primary-color);
-        }
-
-        .jade-section {
-            background-color: rgba(94, 53, 177, 0.05);
-            padding: 2rem;
-            border-radius: 8px;
-            margin-top: 3rem;
-            margin-bottom: 3rem;
-            border: 1px solid rgba(94, 53, 177, 0.2);
-            position: relative;
-        }
-
-        .jade-content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-
-        .jade-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            margin-top: 1.5rem;
-        }
-
-        .jade-button {
-            display: inline-flex;
-            align-items: center;
-            background-color: var(--primary-color);
-            color: white;
-            text-decoration: none;
-            padding: 0.75rem 1.5rem;
-            border-radius: 50px;
-            font-weight: 600;
-            margin-top: 0;
-            transition: background-color 0.3s, transform 0.3s;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .jade-button i {
-            margin-right: 0.5rem;
-        }
-
-        .jade-button:hover {
-            background-color: var(--primary-dark);
-            transform: translateY(-2px);
-            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-        }
-
-        .contact-info {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 2rem;
-            margin-top: 1.5rem;
-        }
-
-        .contact-row-professional {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 2rem;
-            width: 100%;
-        }
-
-        .contact-row-social {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 1.5rem;
-            width: 100%;
-        }
-
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-        }
-
-        .card .contact-item i {
-            color: var(--primary-color);
-        }
-
-        .contact-row-social .contact-item i {
-            color: var(--primary-color);
-        }
-
-        .contact-row-social .contact-item a:hover i {
-            color: var(--primary-light);
-            transform: translateY(-2px);
-            transition: color 0.3s, transform 0.3s;
-        }
-
-        footer {
-            background-color: var(--primary-dark);
-            color: white;
-            text-align: center;
-            padding: 1.5rem 0;
-        }
-
-        .footer-content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .footer-credits {
-            font-size: 0.85rem;
-            margin-top: 1rem;
-            opacity: 0.8;
-        }
-
-        .scroll-to-top {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: var(--primary-color);
-            color: white;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-            opacity: 0;
-            transition: opacity 0.3s, background-color 0.3s;
-            z-index: 100;
-        }
-
-        .scroll-to-top.visible {
-            opacity: 1;
-        }
-
-        .scroll-to-top:hover {
-            background-color: var(--primary-light);
-        }
-
-        /* Responsive styles */
-        @media (max-width: 992px) {
-            .hero {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .hero-text {
-                padding-right: 0;
-                padding-bottom: 2rem;
-            }
-
-            .social-links {
-                justify-content: center;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .mobile-menu-btn {
-                display: block;
-            }
-
-            .nav-links {
-                position: absolute;
-                top: var(--navbar-height);
-                left: 0;
-                right: 0;
-                background-color: var(--primary-color);
-                flex-direction: column;
-                align-items: center;
-                padding: 1rem 0;
-                display: none;
-                z-index: 1000;
-            }
-
-            .nav-links.active {
-                display: flex;
-            }
-
-            .nav-links li {
-                margin: 0.5rem 0;
-            }
-
-            .research-areas {
-                grid-template-columns: 1fr;
-            }
-
-            .contact-info {
-                flex-direction: column;
-                gap: 1rem;
-            }
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/orbit.css">
     <script type="application/ld+json">
 {
     "@context": "https://schema.org",
@@ -593,393 +23,196 @@
     "name": "Mara Attia",
     "givenName": "Mara",
     "familyName": "Attia",
+    "honorificPrefix": "Dr.",
     "gender": "non-binary",
     "alternateName": "they/them",
-    "knowsLanguage": [
-        "en",
-        "fr",
-        "ar",
-        "de"
-    ],
-    "email": "maraaattia@gmail.com",
+    "knowsLanguage": ["fr", "ar", "en", "de", "nl"],
+    "email": "m.attia@rug.nl",
     "url": "https://maraattia.github.io",
+    "image": "https://maraattia.github.io/images/mara_attia.jpg",
     "sameAs": [
         "https://github.com/maraattia",
         "https://orcid.org/0000-0002-7971-7439",
         "https://ui.adsabs.harvard.edu/public-libraries/UcMvHT4nRrywK0RnkSehYQ",
         "https://bsky.app/profile/marattia.bsky.social"
     ],
-    "jobTitle": "Postdoctoral Researcher",
+    "jobTitle": "SNSF Postdoc.Mobility Fellow",
     "worksFor": {
         "@type": "Organization",
         "name": "Kapteyn Astronomical Institute, University of Groningen",
         "url": "https://www.rug.nl/research/kapteyn/"
     },
-    "description": "Postdoctoral Researcher in Exoplanet Science (they/them), specializing in orbital dynamics, atmospheric evolution, and interior mechanisms.",
+    "description": "Exoplanet scientist (they/them) working on the coupled orbital, atmospheric, and interior evolution of small exoplanets, and author of the open-source codes PALEOS and JADE.",
     "alumniOf": [
-        {
-            "@type": "CollegeOrUniversity",
-            "name": "Geneva Observatory, University of Geneva",
-            "url": "https://www.unige.ch/sciences/astro/en/"
-        },
-        {
-            "@type": "CollegeOrUniversity",
-            "name": "ETH Zurich",
-            "url": "https://ethz.ch/en.html"
-        },
-        {
-            "@type": "CollegeOrUniversity",
-            "name": "École Polytechnique",
-            "url": "https://www.polytechnique.edu/en"
-        }
+        {"@type": "CollegeOrUniversity", "name": "University of Geneva", "url": "https://www.unige.ch/sciences/astro/en/"},
+        {"@type": "CollegeOrUniversity", "name": "ETH Zurich", "url": "https://ethz.ch/en.html"},
+        {"@type": "CollegeOrUniversity", "name": "École Polytechnique", "url": "https://www.polytechnique.edu/en"}
     ],
     "knowsAbout": [
-        "Exoplanet Science",
-        "Orbital Dynamics",
-        "Atmospheric Evolution",
-        "Planetary Interior Mechanisms",
-        "Hot Neptune Desert",
-        "Exoplanetary Demographics"
+        "Exoplanets",
+        "Planetary interiors",
+        "Equations of state",
+        "Atmospheric escape",
+        "Orbital dynamics",
+        "Sub-Neptunes",
+        "Super-Earths"
     ],
     "hasCredential": {
         "@type": "EducationalOccupationalCredential",
         "credentialCategory": "doctorate",
-        "name": "PhD in Astronomy and Astrophysics",
-        "educationalLevel": "Doctoral Degree"
+        "name": "PhD in Astronomy and Astrophysics, University of Geneva"
     },
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://maraattia.github.io/"
-    }
+    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://maraattia.github.io/"}
 }
     </script>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <nav>
-                <a href="#" class="logo">Mara Attia</a>
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#jade">JADE</a></li>
-                    <li><a href="#research">Research</a></li>
-                    <li><a href="#publications">Publications</a></li>
-                    <li><a href="#cv">CV</a></li>
-                    <li><a href="#teaching">Teaching</a></li>
-                    <li><a href="#press">Press</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <button class="mobile-menu-btn">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </nav>
+<!-- BEGIN site-header -->
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="index.html">Mara Attia</a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="site-nav" aria-label="Menu"><i class="fas fa-bars" aria-hidden="true"></i></button>
+    <nav id="site-nav"><ul>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="codes.html">Codes</a></li>
+      <li><a href="papers.html">Papers</a></li>
+      <li><a href="talks.html">Talks</a></li>
+      <li><a href="teaching.html">Teaching</a></li>
+      <li><a href="assets/CV_Mara_Attia.pdf" target="_blank" rel="noopener">CV</a></li>
+    </ul></nav>
+  </div>
+</header>
+<!-- END site-header -->
+
+<main class="wrap">
+    <section class="hero" id="about" style="--img: url(/images/bg/hero.jpg)">
+        <img src="images/mara_attia.jpg" alt="Portrait of Mara Attia" width="600" height="800">
+        <div>
+            <h1>Dr. Mara Attia (they/them)</h1>
+            <p class="subtitle">Exoplanet Scientist</p>
+            <p class="role">SNSF Postdoc.Mobility Fellow, Kapteyn Astronomical Institute, University of Groningen</p>
+            <p class="pitch">I study how planets between Earth and Neptune in size change over billions of years. Their orbits can migrate, their atmospheres escape to space, and their molten interiors trade gas with the atmosphere above. I build open-source models of these processes and use them to reconstruct the histories of planets observed today.</p>
+            <p>I did my PhD at the University of Geneva and moved to Groningen in 2025 on my own fellowship from the Swiss National Science Foundation, to work at the Kapteyn Astronomical Institute alongside Tim Lichtenberg's <a href="https://formingworlds.space/" target="_blank" rel="noopener">Forming Worlds Lab</a>. Beyond my host group, I co-lead the Dutch node of a Cambridge–Toronto–Groningen collaboration on open model ensembles, abiotic baselines for interpreting exoplanet observations.</p>
         </div>
-    </header>
+        <ul class="links">
+            <li><a href="mailto:m.attia@rug.nl"><i class="fas fa-envelope" aria-hidden="true"></i>m.attia@rug.nl</a></li>
+            <li><a href="assets/CV_Mara_Attia.pdf" target="_blank" rel="noopener"><i class="fas fa-file-lines" aria-hidden="true"></i>CV (PDF)</a></li>
+            <li><a href="https://formingworlds.space/" target="_blank" rel="noopener"><i class="fas fa-globe" aria-hidden="true"></i>Forming Worlds Lab</a></li>
+            <li><a href="https://orcid.org/0000-0002-7971-7439" target="_blank" rel="noopener"><i class="fab fa-orcid" aria-hidden="true"></i>ORCID</a></li>
+            <li><a href="https://github.com/maraattia" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i>GitHub</a></li>
+            <li><a href="https://ui.adsabs.harvard.edu/public-libraries/UcMvHT4nRrywK0RnkSehYQ" target="_blank" rel="noopener"><i class="fas fa-book" aria-hidden="true"></i>ADS</a></li>
+            <li><a href="https://bsky.app/profile/marattia.bsky.social" target="_blank" rel="noopener"><i class="fa-brands fa-bluesky" aria-hidden="true"></i>Bluesky</a></li>
+        </ul>
+    </section>
 
-    <main class="container">
-        <section id="about" class="hero">
-            <div class="hero-text">
-                <h1>Dr. Mara Attia (they/them)</h1>
-                <p><strong>Astrophysicist, Postdoctoral Researcher in Exoplanet Science</strong></p>
-                <p><em>Kapteyn Astronomical Institute, University of Groningen</em></p>
-                <p>My research focuses on studying the interplay between dynamical and atmospheric phenomena in the long-term evolution of exoplanets close to their stars.</p>
-                <div class="social-links">
-                    <a href="mailto:maraaattia@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-                    <a href="https://orcid.org/0000-0002-7971-7439" target="_blank" title="ORCID"><i class="fab fa-orcid"></i></a>
-                    <a href="https://github.com/maraattia" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="https://ui.adsabs.harvard.edu/public-libraries/UcMvHT4nRrywK0RnkSehYQ" target="_blank" title="NASA ADS"><i class="fas fa-book"></i></a>
-                    <a href="https://bsky.app/profile/marattia.bsky.social" target="_blank" title="Bluesky"><i class="fa-brands fa-bluesky"></i></a>
-                </div>
-            </div>
-            <div class="hero-img-container">
-                <img src="images/mara_attia.jpg" alt="Mara Attia" class="hero-img">
-            </div>
-        </section>
+    <section id="news">
+        <h2>News</h2>
+        <ul class="news">
+            <li><time datetime="2026-11">November 2026</time><span>Coming up: an invited talk at <a href="https://ejc2026.exobiologie.fr/" target="_blank" rel="noopener">Exobiologie Jeunes Chercheur·ses (EJC)</a> in Paris (2–4 November), and a seminar at the Laboratoire de Planétologie et Géosciences in Nantes.</span></li>
+            <li><time datetime="2026-10">October 2026</time><span>Coming up on 30 October: a talk on astronomy and my research for prospective students at the Open Day of the Faculty of Science and Engineering in Groningen.</span></li>
+            <li><time datetime="2026-10">October 2026</time><span>Seminar talks at the Institute of Astronomy, University of Cambridge.</span></li>
+            <li><time datetime="2026-09">September 2026</time><span>I co-convened the session <a href="https://meetingorganizer.copernicus.org/EPSC2026/session/59326" target="_blank" rel="noopener">Empowering the Next Generation of Planetary Scientists</a> at the Europlanet Science Congress in The Hague, and gave a talk there.</span></li>
+            <li><time datetime="2026-09">September 2026</time><span>The PALEOS paper is out in A&amp;A: <a href="https://ui.adsabs.harvard.edu/abs/2026A%26A...713A.225A/abstract" target="_blank" rel="noopener">PALEOS: Multiphase equations of state and mass–radius relations for exoplanet interiors</a>, <strong>Attia</strong> et al. (2026), A&amp;A 713, A225.</span></li>
+            <li><time datetime="2026-09">September 2026</time><span>New preprint, with me as second author: <a href="https://arxiv.org/abs/2609.23091" target="_blank" rel="noopener">Super-Earth interiors shrink by about 10% as they crystallise</a>, Lichtenberg, <strong>Attia</strong>, et al. (2026).</span></li>
+            <li><time datetime="2026-08">August 2026</time><span>New first-author preprint: <a href="https://arxiv.org/abs/2608.30106" target="_blank" rel="noopener">Atmospheric escape fractionates secondary but not primary atmospheres</a>, <strong>Attia</strong> &amp; Lichtenberg (2026).</span></li>
+        </ul>
+    </section>
 
-        <div class="latest-news">
-            <p><u>Latest news:</u></p>
-            <ul class="news-list">
-                <li><em>2026, January.</em> Member of the Local Organizing Committee in the <a href="https://groningen2026.rockyworlds.org/groningen-2026" target="_blank">Rocky Worlds 4</a> conference, which was a great success and an invaluable experience for me. Almost 200 participants came in from all over the world.</li>
-                <li><em>2025, October.</em> New published paper: <a href="https://ui.adsabs.harvard.edu/abs/2025A%26A...702A.132A/abstract" target="_blank">The JADE code: II. Modeling the coupled orbital and atmospheric evolution of GJ 436 b to constrain its migration and companion</a>, Attia et al. (2025), A&A, 702, A132. Second episode of the JADE saga, where a rigorous Bayesian framework is implemented to constrain the history of the iconic GJ 436 system.</li>
-                <li><em>2025, August.</em> New published paper: <a href="https://ui.adsabs.harvard.edu/abs/2025A%26A...700A..35A/abstract" target="_blank">Exploring the parameter space of hierarchical triple black hole systems</a>, Attia & Sibony (2025), A&A, 700, A35. Application of the JADE code to black hole triples and assessment of the Kozai–Lidov mechanism as a viable channel for mergers and gravitational wave progenitors. Very fun (and challenging) side project, completely out of the scope of my usual expertise, but showcases the versatility of JADE.</li>
-                <li><em>2025, July.</em> It is a great honor to receive the <a href="https://ssaa.ch/fr/edith_a_m_ller_award/uuid/i/5225f70c-a2cd-5af2-acfc-ea6b32e401d5-Edith_Alice_M%C3%BCller_Award_2025" target="_blank">Edith Alice Müller Award 2025</a> delivered by the Swiss Society for Astronomy and Astrophysics for an "outstanding PhD thesis in the fields of Astronomy and Astrophysics."</li>
-            </ul>
+    <section id="themes">
+        <h2>Research</h2>
+        <div class="cards">
+            <a class="card card-art" href="research.html#interiors" style="--img: url(/images/bg/interiors.jpg)">
+                <h3>Interiors</h3>
+                <p>What a planet is made of, and whether its mantle is molten or solid, sets its radius and how much water and gas it can store. I wrote PALEOS to compute this.</p>
+            </a>
+            <a class="card card-art" href="research.html#escape" style="--img: url(/images/bg/escape.jpg)">
+                <h3>Atmospheric escape</h3>
+                <p>Starlight strips gas from close-in planets, and light species leave first. I work out how escape changes both the mass and the composition of an atmosphere.</p>
+            </a>
+            <a class="card card-art" href="research.html#orbits" style="--img: url(/images/bg/orbits.jpg)">
+                <h3>Orbital histories</h3>
+                <p>Many close-in planets did not form where we see them. I model how their orbits migrated and what the journey did to their atmospheres.</p>
+            </a>
         </div>
+    </section>
 
-        <section id="jade" class="jade-section">
-            <div class="jade-content">
-                <img src="images/jade_logo.png" alt="JADE Code Logo" class="jade-logo">
-                <h2>The JADE Code</h2>
-                <p>The JADE (Joining Atmosphere and Dynamics for Exoplanets) code is a sophisticated Python framework for simulating the coupled evolution of exoplanetary atmospheres and orbital dynamics in hierarchical three-body systems.</p>
-                <p>Designed to study the interplay between photo-evaporation and high-eccentricity migration, JADE has been instrumental in understanding the formation of the Hot Neptune desert and the peculiar orbital architecture of exoplanets like GJ 436 b.</p>
-                <div class="jade-buttons">
-                    <a href="https://ui.adsabs.harvard.edu/abs/2021A%26A...647A..40A/abstract" class="jade-button" target="_blank">
-                        <i class="fa-solid fa-newspaper"></i> View on ADS
-                    </a>
-                    <a href="https://github.com/JADE-Exoplanets/JADE" class="jade-button" target="_blank">
-                        <i class="fab fa-github"></i> View on GitHub
-                    </a>
-                </div>
+    <section id="codes">
+        <h2>Open-source codes</h2>
+        <div class="cards">
+            <a class="card card-code" href="codes.html#paleos">
+                <img class="card-logo card-logo-paleos" src="images/paleos_logo.png" alt="PALEOS logo">
+                <h3>PALEOS</h3>
+                <p>Equations of state and mass–radius relations for iron, silicate, and water at planetary-interior conditions.</p>
+            </a>
+            <a class="card card-code" href="codes.html#jade">
+                <img class="card-logo card-logo-jade" src="images/jade_logo.png" alt="JADE logo">
+                <h3>JADE</h3>
+                <p>Coupled orbital dynamics and atmospheric escape of planets in three-body systems.</p>
+            </a>
+            <a class="card card-code" href="codes.html#zephyrus">
+                <img class="card-logo card-logo-zephyrus logo-on-light" src="images/zephyrus_logo_light.png" alt="ZEPHYRUS logo">
+                <img class="card-logo card-logo-zephyrus logo-on-dark" src="images/zephyrus_logo_dark.png" alt="ZEPHYRUS logo">
+                <h3>ZEPHYRUS</h3>
+                <p>Atmospheric escape for planetary evolution models, which I am rebuilding around six escape regimes.</p>
+            </a>
+        </div>
+    </section>
+
+    <section id="upcoming">
+        <h2>Upcoming talks</h2>
+<!-- BEGIN upcoming -->
+<ul class="dated">
+<li><span class="when">November 2026</span><span class="what">Exobiologie Jeunes Chercheur·ses (EJC), Paris (France) <span class="kind">invited talk</span></span></li>
+<li><span class="when">November 2026</span><span class="what">Laboratoire de Planétologie et Géosciences, Nantes Université, Nantes (France) <span class="kind">seminar</span></span></li>
+<li><span class="when">January 2027</span><span class="what">Institut de Planétologie et d'Astrophysique de Grenoble, Université Grenoble-Alpes, Grenoble (France) <span class="kind">seminar</span></span></li>
+</ul>
+<!-- END upcoming -->
+        <p class="more"><a href="talks.html">All talks and outreach</a></p>
+    </section>
+
+    <section id="career">
+        <h2>Career</h2>
+        <div class="career">
+            <div>
+                <h3>Positions</h3>
+<!-- BEGIN positions -->
+<ul class="dated compact">
+<li><span class="when">2025–present</span><span class="what">SNSF Postdoc.Mobility Fellow<br>Kapteyn Astronomical Institute, University of Groningen (Groningen, Netherlands)</span></li>
+</ul>
+<!-- END positions -->
             </div>
-        </section>
-
-        <section id="research">
-            <h2>Research</h2>
-            <p>My research focuses on studying the interplay between dynamical and atmospheric phenomena in the long-term evolution of exoplanets close to their stars. I'm currently transitioning toward studying terrestrial planets and interior melting processes, aligning my research closer with ambitious exoplanet missions planned for the coming years.</p>
-            
-            <div class="research-areas">
-                <div class="research-card">
-                    <h3>Orbital Dynamics</h3>
-                    <p>Studying secular dynamical evolution and orbital migration pathways of exoplanets, with a focus on how these processes affect their long-term evolution.</p>
-                </div>
-                <div class="research-card">
-                    <h3>Atmospheric Evolution</h3>
-                    <p>Investigating atmospheric evaporation processes over time and how they affect macroscopic parameters of irradiated planets.</p>
-                </div>
-                <div class="research-card">
-                    <h3>Interior Mechanisms</h3>
-                    <p>Exploring interior melting processes and their impact on the climate evolution of terrestrial exoplanets, particularly in relation to their long-term stability.</p>
-                </div>
-                <div class="research-card">
-                    <h3>Theory</h3>
-                    <p>Developing theoretical frameworks to understand the coupling between orbital dynamics and atmospheric processes, with particular emphasis on resonance phenomena and atmospheric escape.</p>
-                </div>
-                <div class="research-card">
-                    <h3>Modeling</h3>
-                    <p>Creating numerical simulations and computational models to predict the long-term evolution of exoplanetary systems, using custom-developed codes like JADE to solve coupled differential equations.</p>
-                </div>
-                <div class="research-card">
-                    <h3>Demographics</h3>
-                    <p>Analyzing statistical patterns and demographic trends in the exoplanet population, with a focus on identifying evolution pathways that shape observed distributions.</p>
-                </div>
+            <div>
+                <h3>Education</h3>
+<!-- BEGIN education -->
+<ul class="dated compact">
+<li><span class="when">2021–2024</span><span class="what">PhD in Astronomy and Astrophysics<br>University of Geneva (Geneva, Switzerland)</span></li>
+<li><span class="when">2019–2021</span><span class="what">MSc in Physics (Astrophysics)<br>ETH Zurich (Zurich, Switzerland)</span></li>
+<li><span class="when">2016–2019</span><span class="what">MSc in Science and Engineering<br>École Polytechnique (Paris, France)</span></li>
+</ul>
+<!-- END education -->
             </div>
-        </section>
-
-        <section id="publications">
-            <h2>Selected Publications</h2>
-            <ul class="publication-list">
-                <li class="publication-item">
-                    <div class="publication-title"><a href="https://ui.adsabs.harvard.edu/abs/2025A%26A...700A..35A/abstract" target="_blank">Exploring the parameter space of hierarchical triple black hole systems</a></div>
-                    <div class="publication-authors"><strong>Attia, M.</strong>; Sibony, Y. (2025)</div>
-                    <div class="publication-journal">Astronomy & Astrophysics, 700, A35</div>
-                </li>
-                <li class="publication-item">
-                    <div class="publication-title"><a href="https://ui.adsabs.harvard.edu/abs/2025A%26A...702A.132A/abstract" target="_blank">The JADE code: II. Modeling the coupled orbital and atmospheric evolution of GJ 436 b to constrain its migration and companion</a></div>
-                    <div class="publication-authors"><strong>Attia, M.</strong>; Bourrier, V.; Bolmont, E.; Mignon, L.; Delisle, J.-B.; Beust, H.; Hara, N. C.; Mordasini, C. (2025)</div>
-                    <div class="publication-journal">Astronomy & Astrophysics, 702, A132</div>
-                </li>
-                <li class="publication-item">
-                    <div class="publication-title"><a href="https://ui.adsabs.harvard.edu/abs/2021A%26A...647A..40A/abstract" target="_blank">The JADE code: Coupling secular exoplanetary dynamics and photo-evaporation</a></div>
-                    <div class="publication-authors"><strong>Attia, M.</strong>; Bourrier, V.; Eggenberger, P.; Mordasini, C.; Beust, H.; Ehrenreich, D. (2021)</div>
-                    <div class="publication-journal">Astronomy & Astrophysics, 647, A40</div>
-                </li>
-            </ul>
-            <p><a href="https://ui.adsabs.harvard.edu/public-libraries/UcMvHT4nRrywK0RnkSehYQ" target="_blank">See full publication list on ADS</a></p>
-        </section>
-
-        <section id="cv">
-            <h2>Curriculum Vitae</h2>
-
-            <h3>Professional Experience</h3>
-            <div class="card">
-                <p><strong>SNSF Postdoc.Mobility Fellow</strong>, 2025 – Present<br>
-                Kapteyn Astronomical Institute, University of Groningen, Netherlands<br>
-                <em>Charting the Evolution of Alien Worlds: Integrating Interior, Atmospheric, and Orbital Processes</em><br>
-                In collaboration with Prof. Tim Lichtenberg, this project seeks to scrutinize the main processes affecting the long-term evolution of close-in small exoplanets, namely interior physics and chemistry, atmospheric evaporation, and orbital migration. By assessing their relative roles, we will shed light on the past history of super-Earths and mini-Neptunes altogether at the population level, bringing forward the interplay between the different engines driving their temporal advancement.</p>
-                
-                <p><strong>Postdoctoral Researcher</strong>, 2024 – 2025<br>
-                Geneva Observatory, University of Geneva, Switzerland<br>
-                <em>Continuation of PhD research: Coupling the Secular Dynamical and Atmospheric Evolution of Close-in Exoplanets</em><br>
-                Central to this project is the interplay between atmospheric evaporation and orbital migration, two pivotal mechanisms governing the evolution of planetary systems. Through both theoretical investigations and observational analyses, this research contributes to the larger understanding of how these dynamic interactions sculpt the diversity of exoplanet populations, in particular the hot Neptune desert.</p>
-            </div>
-
-            <h3>Grants and Awards</h3>
-            <div class="card">
-                <p><a href="https://ssaa.ch/fr/edith_a_m_ller_award/uuid/i/5225f70c-a2cd-5af2-acfc-ea6b32e401d5-Edith_Alice_M%C3%BCller_Award_2025" target="_blank">Edith Alice Müller Award</a>, Swiss Society for Astronomy and Astrophysics, 2025</p>
-                <p><strong>Postdoc.Mobility Fellowship, Swiss National Science Foundation, 2025</strong></p>
-                <p>Travel & Funding Award, Swiss Society for Astronomy and Astrophysics, 2022</p>
-                <p>Virtual Outstanding Presentation Contest Award, Europlanet Science Congress, 2021</p>
-                <p>Research Internship Award in Astrophysics and Cosmology, École Polytechnique, 2019</p>
-            </div>
-            
-            <h3>Education</h3>
-            <div class="card">
-                <p><strong>PhD in Astronomy and Astrophysics</strong>, 2021 – 2024<br>
-                Geneva Observatory, University of Geneva, Switzerland<br>
-                <em>Thesis: Interplay between dynamical and atmospheric phenomena in exoplanet evolution.</em><br>
-                <u>Supervisors:</u> Profs. Vincent Bourrier and Emeline Bolmont.<br>
-                Rewarded by the <a href="https://ssaa.ch/fr/edith_a_m_ller_award/uuid/i/5225f70c-a2cd-5af2-acfc-ea6b32e401d5-Edith_Alice_M%C3%BCller_Award_2025" target="_blank">Edith Alice Müller Award 2025</a> delivered by the Swiss Society for Astronomy and Astrophysics.</p>
-                
-                <p><strong>MSc in Physics (Astrophysics)</strong>, 2019 – 2021<br>
-                ETH Zurich, Switzerland<br>
-                <em>Master Thesis: Primordial magnetic fields during the Epoch of Reionization.</em><br>
-                <u>Supervisor:</u> Prof. Romain Teyssier.<br>
-                Final MSc average grade: 5.8/6 (high honors).</p>
-                
-                <p><strong>MSc in Science and Engineering</strong>, 2016 – 2019<br>
-                École Polytechnique (Paris), France<br>
-                <em>Research Internship: Exoplanetary atmospheres and orbital architectures.</em><br>
-                <u>Supervisors:</u> Profs. Vincent Bourrier and David Ehrenreich.<br>
-                Rewarded by the Research Internship Award in Astrophysics and Cosmology delivered by École Polytechnique.</p>
-            </div>
-            
-            <p><a href="assets/CV_Mara_Attia.pdf" target="_blank">Download Full CV</a></p>
-        </section>
-
-        <section id="teaching">
-            <h2>Teaching & Supervision</h2>
-            
-            <h3>Teaching</h3>
-            <ul class="teaching-list">
-                <li class="teaching-item">
-                    <div class="teaching-date">2025 – Present</div>
-                    <div>Invited Lecturer for "Planetary Systems" (BSc) and "Exoplanets" (MSc) courses, University of Groningen</div>
-                </li>
-                <li class="teaching-item">
-                    <div class="teaching-date">2022 – 2023</div>
-                    <div>Teaching Assistant for "Planetary Atmospheres" and "Planetary Formation and Evolution" (MSc) courses, University of Geneva</div>
-                </li>
-            </ul>
-            
-            <h3>Supervision</h3>
-            <ul class="supervision-list">
-                <li class="supervision-item">
-                    <div class="supervision-date">September 2025 – Present</div>
-                    <div>Co-supervised Ema Jungová (University of Groningen) for a Master thesis on surface ocean formation in sub-Neptunes</div>
-                </li>
-                <li class="supervision-item">
-                    <div class="supervision-date">May 2023 – June 2023</div>
-                    <div>Co-supervised Léonie Hoerner (Université de Lorraine) for a Master internship on modeling exoplanetary water atmospheres</div>
-                </li>
-                <li class="supervision-item">
-                    <div class="supervision-date">April 2022 – August 2022</div>
-                    <div>Co-supervised Théo Vrignaud (École polytechnique, Paris) for a Master thesis on the analysis of the Rossiter–McLaughlin effect of ultra-short-period rocky exoplanets</div>
-                </li>
-                <li class="supervision-item">
-                    <div class="supervision-date">February 2022 – June 2022</div>
-                    <div>Supervised Leon Kwok (University of Geneva) for a Master project on exoplanetary dynamical tides</div>
-                </li>
-                <li class="supervision-item">
-                    <div class="supervision-date">November 2021 - March 2022</div>
-                    <div>Supervised Aymeric Carchereux (University of Geneva) for a Bachelor project on exoplanetary radius pulsations induced by the Kozai–Lidov mechanism</div>
-                </li>
-            </ul>
-        </section>
-
-        <section id="press">
-            <h2>Press</h2>
-            <div class="card">
-                <ul>
-                    <li>2025, Meridiana: <a href="https://www.astroticino.ch/doc/meridiana-n-295-maggio-luglio-2025/?wpdmdl=6486&refresh=69972f3206acd1771515698" target="_blank">Una nuova Super Terra.</a> Journal article (Italian) in a local astronomy newspaper from Ticino, where I was interviewed about our detection of TOI-512 b.</li>
-                    <li>2025, University of Geneva: <a href="https://www.unige.ch/medias/en/2025/un-tango-observationnel-revele-une-super-terre" target="_blank">Observational tango reveals a Super-Earth.</a> Press release about our detection of TOI-512 b, a transiting planet discovered using TESS and ESPRESSO, which occupies the transition range between super-Earths and mini-Neptunes.</li>
-                    <li>2023, ESO: <a href="https://www.eso.org/public/blog/where-did-all-neptunes-go/" target="_blank">Where did all the Neptunes go?</a> Blog article about our contribution to the understanding of the role of high-eccentricity migration in shaping the hot Neptune desert through the Rossiter–McLaughlin effect.</li>
-                    <li>2023, University of Geneva: <a href="https://www.unige.ch/medias/en/2023/migration-tumultueuse-en-bordure-du-desert-des-neptunes-chaudes" target="_blank">Tumultuous migration on the edge of the Hot Neptunes Desert.</a> Press release about our detection and analysis of the Rossiter–McLaughlin signature in a sample of planets located around the hot Neptune desert.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <div class="card">
-                <div class="contact-info">
-
-                    <div class="contact-row-professional">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>maraaattia@gmail.com</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Kapteyn Astronomical Institute, University of Groningen, The Netherlands</span>
-                        </div>
-                    </div>
-                    
-                    <hr style="width: 50%; margin: 0; border: 0; border-top: 1px solid rgba(94, 53, 177, 0.2);">
-                    
-                    <div class="contact-row-social">
-                        <div class="contact-item">
-                            <i class="fab fa-github"></i>
-                            <a href="https://github.com/maraattia" target="_blank">GitHub</a>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fab fa-orcid"></i>
-                            <a href="https://orcid.org/0000-0002-7971-7439" target="_blank">ORCID</a>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-book"></i>
-                            <a href="https://ui.adsabs.harvard.edu/public-libraries/UcMvHT4nRrywK0RnkSehYQ" target="_blank">ADS</a>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fa-brands fa-bluesky"></i>
-                            <a href="https://bsky.app/profile/marattia.bsky.social" target="_blank">Bluesky</a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2025 Mara Attia | Last updated: February 2026</p>
-                <div class="footer-credits">
-                    <p>Background image and JADE logo credit: Elsa Bersier, ESBDI</p>
-                </div>
+            <div>
+                <h3>Awards and grants</h3>
+<!-- BEGIN awards -->
+<ul class="dated compact">
+<li><span class="when">July 2025</span><span class="what"><a href="https://ssaa.ch/fr/edith_a_m_ller_award/uuid/i/5225f70c-a2cd-5af2-acfc-ea6b32e401d5-Edith_Alice_M%C3%BCller_Award_2025" target="_blank" rel="noopener">Edith Alice Müller Award</a><br>Swiss Society for Astronomy and Astrophysics</span></li>
+<li><span class="when">May 2025</span><span class="what">Postdoc.Mobility Fellowship<br>Swiss National Science Foundation</span></li>
+<li><span class="when">March 2022</span><span class="what">Travel &amp; Funding Award<br>Swiss Society for Astronomy and Astrophysics</span></li>
+</ul>
+<!-- END awards -->
             </div>
         </div>
-    </footer>
+    </section>
+</main>
 
-    <div class="scroll-to-top">
-        <i class="fas fa-arrow-up"></i>
-    </div>
-
-    <script>
-        // Mobile menu toggle
-        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-        const navLinks = document.querySelector('.nav-links');
-
-        mobileMenuBtn.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                navLinks.classList.remove('active');
-                
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-                
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 70,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-
-        // Scroll to top button
-        const scrollToTopBtn = document.querySelector('.scroll-to-top');
-
-        window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 300) {
-                scrollToTopBtn.classList.add('visible');
-            } else {
-                scrollToTopBtn.classList.remove('visible');
-            }
-        });
-
-        scrollToTopBtn.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-    </script>
+<!-- BEGIN site-footer -->
+<footer class="site-footer">
+  <div class="wrap">
+    <p>&copy; 2026 Mara Attia. Last updated October 2026.</p>
+    <p class="credits">JADE logo by Elsa Bersier (ESBDI). ZEPHYRUS logo from the <a href="https://github.com/FormingWorlds/ZEPHYRUS" target="_blank" rel="noopener">ZEPHYRUS repository</a>. Background art, cropped and dimmed, under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>: TRAPPIST-1, <a href="https://www.eso.org/public/images/eso1805a/" target="_blank" rel="noopener">ESO/M. Kornmesser</a>. CoRoT-7 b, <a href="https://www.eso.org/public/images/eso0933a/" target="_blank" rel="noopener">ESO/L. Calçada</a>. GJ 436 b, <a href="https://esahubble.org/images/heic1515a/" target="_blank" rel="noopener">NASA, ESA, STScI, and G. Bacon</a>. 2M1510 (AB) b, <a href="https://www.eso.org/public/images/eso2508a/" target="_blank" rel="noopener">ESO/L. Calçada</a>. Milky Way, <a href="https://www.eso.org/public/images/eso0932a/" target="_blank" rel="noopener">ESO/S. Brunier</a>.</p>
+  </div>
+</footer>
+<!-- END site-footer -->
+<script src="site.js"></script>
 </body>
 </html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Research of Dr. Mara Attia: planetary interiors and equations of state, atmospheric escape, and the orbital histories of close-in exoplanets.">
+    <title>Research | Mara Attia</title>
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/orbit.css">
+</head>
+<body>
+<!-- BEGIN site-header -->
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="index.html">Mara Attia</a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="site-nav" aria-label="Menu"><i class="fas fa-bars" aria-hidden="true"></i></button>
+    <nav id="site-nav"><ul>
+      <li><a href="research.html" aria-current="page">Research</a></li>
+      <li><a href="codes.html">Codes</a></li>
+      <li><a href="papers.html">Papers</a></li>
+      <li><a href="talks.html">Talks</a></li>
+      <li><a href="teaching.html">Teaching</a></li>
+      <li><a href="assets/CV_Mara_Attia.pdf" target="_blank" rel="noopener">CV</a></li>
+    </ul></nav>
+  </div>
+</header>
+<!-- END site-header -->
+
+<main class="wrap">
+    <div class="page-head" style="--img: url(/images/bg/banner.jpg)">
+        <h1>Research</h1>
+        <p class="page-intro">Planets between Earth and Neptune in size, on orbits much closer to their stars than Mercury is to the Sun, are the most common kind found by the Kepler mission, and JWST now measures their atmospheres. Reading those measurements requires knowing each planet's history: where its orbit has been, what its atmosphere has lost, and what its interior has stored or released. My research follows that history from orbit to interior to atmosphere, with open-source models that I build and release.</p>
+    </div>
+
+    <section class="theme" id="interiors" style="--img: url(/images/bg/interiors.jpg)">
+        <h3>Interiors and equations of state</h3>
+        <p>For most small exoplanets, mass and radius are all we measure. Turning them into a composition needs the equation of state of each material at the conditions inside the planet, up to thousands of gigapascals in a super-Earth. I wrote <a href="codes.html#paleos">PALEOS</a>, an open-source library of equations of state for iron, MgSiO₃ silicate, and water, which selects the stable phase (solid polymorph, liquid, or ice) at every pressure and temperature and comes with precomputed tables and mass–radius relations. It is now the interior back-end of the PROTEUS planetary-evolution framework.</p>
+        <p>With it I follow how magma oceans crystallize and how a planet's interior exchanges water and other volatiles with the envelope above it. One question I am working on, partly with the MSc student Ema Jungová, is when a sub-Neptune can keep liquid water at its surface.</p>
+        <p class="refs">Key papers: <a href="https://ui.adsabs.harvard.edu/abs/2026A%26A...713A.225A/abstract" target="_blank" rel="noopener">Attia et al. 2026, A&amp;A 713, A225</a> · <a href="https://arxiv.org/abs/2609.23091" target="_blank" rel="noopener">Lichtenberg et al. 2026, preprint</a> · <a href="https://ui.adsabs.harvard.edu/abs/2026ApJ..1007L...8C/abstract" target="_blank" rel="noopener">Cesario et al. 2026, ApJL 1007, L8</a></p>
+    </section>
+
+    <section class="theme" id="escape" style="--img: url(/images/bg/escape.jpg)">
+        <h3>Atmospheric escape</h3>
+        <p>Close-in planets lose gas to space, heated by the X-ray and ultraviolet light of their star or by their own internal heat. How fast they lose it depends on which escape regime applies, and light species can leave faster than heavy ones, so escape changes what an atmosphere is made of as well as how much of it remains. In a recent paper with Tim Lichtenberg, I showed that escape fractionates secondary atmospheres, outgassed from the interior, but not the primary hydrogen-rich envelopes that planets capture from their birth disk.</p>
+        <p>In 2026 I co-supervised four BSc theses at Groningen, each on one escape regime: Jeans, diffusion-limited, radiation-recombination-limited, and impact-driven escape. I am now bringing these regimes together in <a href="codes.html#zephyrus">ZEPHYRUS</a>, the escape module of PROTEUS, so that an evolution model applies the right regime at every step.</p>
+        <p class="refs">Key papers: <a href="https://arxiv.org/abs/2608.30106" target="_blank" rel="noopener">Attia &amp; Lichtenberg 2026, preprint</a> · <a href="https://ui.adsabs.harvard.edu/abs/2021A%26A...647A..40A/abstract" target="_blank" rel="noopener">Attia et al. 2021, A&amp;A 647, A40</a></p>
+    </section>
+
+    <section class="theme" id="orbits" style="--img: url(/images/bg/orbits.jpg)">
+        <h3>Orbital histories</h3>
+        <p>The orbit a planet has today need not be the orbit it formed on. A distant companion can slowly raise a planet's eccentricity through the von Zeipel–Lidov–Kozai mechanism, and tides then draw the planet in close to its star, where the irradiation is far stronger and the atmosphere erodes. During my PhD in Geneva I wrote <a href="codes.html#jade">JADE</a>, which couples these secular three-body dynamics with atmospheric escape. With it I reconstructed the history of GJ 436 b, a warm Neptune on an eccentric, polar orbit, and constrained its migration and the companion that may have driven it.</p>
+        <p>I have also studied how tides shape the spin–orbit angles of close-in planets, and carried the same dynamics over to triple black-hole systems. The next step is to make orbital history a driver of coupled interior–atmosphere evolution rather than a fixed input.</p>
+        <p class="refs">Key papers: <a href="https://ui.adsabs.harvard.edu/abs/2025A%26A...702A.132A/abstract" target="_blank" rel="noopener">Attia et al. 2025, A&amp;A 702, A132</a> · <a href="https://ui.adsabs.harvard.edu/abs/2023A%26A...674A.120A/abstract" target="_blank" rel="noopener">Attia et al. 2023, A&amp;A 674, A120</a> · <a href="https://ui.adsabs.harvard.edu/abs/2025A%26A...700A..35A/abstract" target="_blank" rel="noopener">Attia &amp; Sibony 2025, A&amp;A 700, A35</a></p>
+    </section>
+
+    <h2>Collaborations and observations</h2>
+    <p>Beyond my host group at Kapteyn, I co-lead the Dutch node of a Cambridge–Toronto–Groningen collaboration on open model ensembles, abiotic baselines for interpreting exoplanet observations. Before Groningen, I worked in the exoplanet group of the Geneva Observatory on transit spectroscopy and the Rossiter–McLaughlin effect, and I was principal investigator of observing programs on ESPRESSO, HARPS, SOPHIE, and GIARPS.</p>
+</main>
+
+<!-- BEGIN site-footer -->
+<footer class="site-footer">
+  <div class="wrap">
+    <p>&copy; 2026 Mara Attia. Last updated October 2026.</p>
+    <p class="credits">JADE logo by Elsa Bersier (ESBDI). ZEPHYRUS logo from the <a href="https://github.com/FormingWorlds/ZEPHYRUS" target="_blank" rel="noopener">ZEPHYRUS repository</a>. Background art, cropped and dimmed, under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>: TRAPPIST-1, <a href="https://www.eso.org/public/images/eso1805a/" target="_blank" rel="noopener">ESO/M. Kornmesser</a>. CoRoT-7 b, <a href="https://www.eso.org/public/images/eso0933a/" target="_blank" rel="noopener">ESO/L. Calçada</a>. GJ 436 b, <a href="https://esahubble.org/images/heic1515a/" target="_blank" rel="noopener">NASA, ESA, STScI, and G. Bacon</a>. 2M1510 (AB) b, <a href="https://www.eso.org/public/images/eso2508a/" target="_blank" rel="noopener">ESO/L. Calçada</a>. Milky Way, <a href="https://www.eso.org/public/images/eso0932a/" target="_blank" rel="noopener">ESO/S. Brunier</a>.</p>
+  </div>
+</footer>
+<!-- END site-footer -->
+<script src="site.js"></script>
+</body>
+</html>
